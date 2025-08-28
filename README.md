@@ -2,7 +2,7 @@
 
 A modern, responsive e-commerce product filtering application built with React, TypeScript, and Tailwind CSS. This application demonstrates advanced filtering capabilities, responsive design, and comprehensive testing strategies.
 
-# Live demo :https://ecommercefilterapp.netlify.app/
+## Live demo :https://ecommercefilterapp.netlify.app/
 
 ## Features
 
@@ -33,32 +33,43 @@ A modern, responsive e-commerce product filtering application built with React, 
 - **Styling**: Tailwind CSS with custom components
 - **Icons**: Lucide React
 - **Build Tool**: Vite
-- **Testing**: Cypress (E2E), Jest (Unit)
 - **Linting**: ESLint with TypeScript support
+- **Manual Testing** → Checklists, boundary value analysis, exploratory testing.  
+- **Automation** →  
+  - **Jest + React Testing Library** (unit & integration)  
+  - **Cypress** (end-to-end UI tests)  
+- **Defect Management** → Jira (future migration, manual log kept).  
+- **Reporting & Metrics** → Markdown docs + charts, PDF export.  
 
-## Project Structure
 
+## 📂 Repository Structure
+
+```bash
+ecommerce-App/                    
+│
+├── cypress/                 # Cypress E2E tests
+│   ├── e2e/                 # Test specifications
+│   ├── fixtures/            # Mock data
+│   ├── support/             # Commands/utilities
+│   └── reports/ 
+├── src/                     # Application source code
+│            
+├── __tests__/               # Jest & RTL unit/integration tests
+│   ├── ProductCard.test.js
+│   ├── FilterBar.test.js
+│   └── ...
+│
+├── qa-docs/                 # QA documentation
+│   ├── test-plan.md
+│   ├── test-cases.md
+│   ├── defect-log.md
+│   ├── traceability-matrix.md
+│   ├── test-report.md
+│   └── metrics/             # Charts, screenshots
+│
+│
+└── README.md
 ```
-src/
-├── components/
-│   ├── ProductCard.tsx      # Individual product display
-│   ├── ProductGrid.tsx      # Products grid layout
-│   └── Sidebar.tsx          # Filter sidebar
-├── data/
-│   └── products.js          # Sample product data
-├── utils/
-│   ├── filterUtils.js       # Filter logic (for white-box testing)
-│   └── __tests__/
-│       └── filterUtils.test.js
-├── test/
-│   └── setup.js            # Jest test setup
-└── App.tsx                 # Main application component
-
-cypress/
-└── e2e/
-    └── filter.cy.js        # End-to-end tests
-```
-
 ## Testing Strategy
 
 This project implements comprehensive testing using multiple testing techniques:
