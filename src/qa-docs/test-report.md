@@ -53,7 +53,7 @@ We applied **Manual Testing, Jest Unit Testing, React Testing Library (Component
 - Failed: **2**  
 - Blocked: **0**  
 
-```mermaid
+```
 pie title Manual Testing Results
     "Passed" : 18
     "Failed" : 2
@@ -71,7 +71,7 @@ pie title React Testing Results
 pie title Cypress E2E Results
     "Passed" : 18
     "Failed" : 0
-
+```
 
 | Test Type             | Total | Passed | Failed | Coverage |
 | --------------------- | ----- | ------ | ------ | -------- |
