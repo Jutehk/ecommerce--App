@@ -1,12 +1,12 @@
-# 🛍️ Modern E-Commerce Product Filter
+#  Modern E-Commerce Product Filter
 
 A modern, responsive e-commerce product filtering application built with React, TypeScript, and Tailwind CSS. This application demonstrates advanced filtering capabilities, responsive design, and comprehensive testing strategies.
 
-## Live demo :https://ecommercefilterapp.netlify.app/
+### Live demo :https://ecommercefilterapp.netlify.app/
 
 ## Features
 
-### 🎯 Core Functionality
+### Core Functionality
 - **Product Display**: Grid layout showcasing 15 sample products with images, names, prices, categories, and star ratings
 - **Advanced Filtering**:
   - Multi-select category filter (Electronics, Clothing, Home, Sports)
@@ -19,7 +19,7 @@ A modern, responsive e-commerce product filtering application built with React, 
 - **Responsive Design**: Mobile-first approach with collapsible sidebar
 - **Real-time Updates**: Instant filtering and sorting without page reloads
 
-### 🎨 Design Features
+###  Design Features
 - Modern gradient backgrounds and card designs
 - Smooth animations and hover effects
 - Clean sidebar layout with intuitive controls
@@ -42,7 +42,7 @@ A modern, responsive e-commerce product filtering application built with React, 
 - **Reporting & Metrics** → Markdown docs + charts, PDF export.  
 
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```bash
 ecommerce-App/                    
@@ -219,9 +219,7 @@ Tests internal logic and code paths:
 4. Ensure all tests pass
 5. Submit a pull request
 
-## License
 
-MIT License - feel free to use this project for learning and development purposes.
 
 ---
 
