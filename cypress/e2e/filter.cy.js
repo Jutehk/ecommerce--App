@@ -1,8 +1,11 @@
+
+
 describe("E-Commerce Product Filter", () => {
   beforeEach(() => {
     cy.visit("/");
   });
 
+  // ✅ Initial Load
   describe("Initial Load", () => {
     it("should display the app title", () => {
       cy.contains("🛍️ Modern E-Commerce Filter").should("be.visible");
@@ -27,6 +30,7 @@ describe("E-Commerce Product Filter", () => {
     });
   });
 
+  // ✅ Category Filtering
   describe("Category Filtering", () => {
     it("should filter products by Electronics category", () => {
       cy.get('[data-testid="category-electronics"]').click();
@@ -50,6 +54,7 @@ describe("E-Commerce Product Filter", () => {
     });
   });
 
+  // ✅ Price Range
   describe("Price Range Filtering", () => {
     it("should filter products by price range using input fields", () => {
       cy.get('[data-testid="price-min"]').clear().type("100");
@@ -64,6 +69,7 @@ describe("E-Commerce Product Filter", () => {
     });
   });
 
+  // ✅ Sorting
   describe("Sorting", () => {
     it("should sort products by price low to high", () => {
       cy.get('[data-testid="sort-dropdown"]').select("price-low-high");
@@ -81,6 +87,7 @@ describe("E-Commerce Product Filter", () => {
     });
   });
 
+  // ✅ Combined Filters
   describe("Combined Filtering", () => {
     it("should apply all filters together", () => {
       cy.get('[data-testid="category-electronics"]').click();
@@ -93,6 +100,7 @@ describe("E-Commerce Product Filter", () => {
     });
   });
 
+  // ✅ Responsive Design
   describe("Responsive Design", () => {
     it("should work on mobile viewport", () => {
       cy.viewport(375, 667);
@@ -101,6 +109,7 @@ describe("E-Commerce Product Filter", () => {
     });
   });
 
+  // ✅ Boundary Value Analysis
   describe("Boundary Value Analysis", () => {
     it("should handle minimum price boundary (0)", () => {
       cy.get('[data-testid="price-min"]').clear().type("0");
@@ -121,6 +130,7 @@ describe("E-Commerce Product Filter", () => {
     });
   });
 
+  // ✅ Clear Filters
   describe("Clear Filters", () => {
     it("should clear all filters when clear button is clicked", () => {
       cy.get('[data-testid="category-electronics"]').click();

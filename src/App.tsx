@@ -5,6 +5,9 @@ import { filterProducts, getUniqueCategories } from "./utils/filterUtils";
 import Sidebar from "./components/Sidebar";
 import ProductGrid from "./components/ProductGrid";
 
+
+
+
 function App() {
   const [filters, setFilters] = useState({
     categories: [] as string[],
